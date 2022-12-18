@@ -1,9 +1,11 @@
 const mongoose=require("mongoose")
 
 const TodoSchema=mongoose.Schema({
-    taskname:String,
-    status:String,
-    tag:String,
+    name:String,
+    title:String,
+    price:Number,
+    quantity:Number,
+    image:String,
     userId:String
 
 })
