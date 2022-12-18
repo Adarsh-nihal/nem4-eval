@@ -3,7 +3,8 @@ const mongoose=require("mongoose")
 
 const UserSchema=mongoose.Schema({
     email:String,
-    password:String
+    password:String,
+    name:String
 
 })
 
