@@ -6,8 +6,9 @@ const {TodoModel}=require("../models/Todo.model")
 
 
 todoRouter.get("/",async(req,res)=>{
+    const userId=req.body.userId
     try{
-     const notes=await TodoModel.find()
+     const notes=await TodoModel.find({userId:userId})
      res.send(notes)
     }
     catch(err){
